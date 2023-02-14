@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvvi</title>
+    <style>
+    
+
+  .loader{
+    background: rgba(153, 153, 153, 0.801) url('TrezurebyOlvvi.png') no-repeat center ;
+    background-size: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .loader div{
+    background: rgba(153, 153, 153, 0.801);
+    width: 16px;
+    height: 32px;
+    margin-left: 10px;
+    margin-top: 70vh;
+    animation: loader 1.2s infinite;
+    z-index: 5;
+  }
+  
+  @keyframes loader{
+    90%{
+      height: 64px;
+    }
+  }
+  
+  .loader div:nth-child(1){
+    background: #FF9F1A;
+    animation-delay: -0.40s;
+  }
+  
+  .loader div:nth-child(2){
+    background: #FED330;
+    animation-delay: -0.20s;
+  }
+  
+  .loader div:nth-child(3){
+    background: #FFFA65;
+    animation-delay: 0s;
+  }
+ 
+
+
+     </style>
+</head>
+<body>
+    <div class="loader">
+    <p></p>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+ <script type="text/javascript">
+  setTimeout(
+    function(){ 
+        $('.loader').fadeToggle();
+        send()
+    },3000  ); 
+     function send()
+     {location.href="home.html";}
+    
+  
+ 
+
+  
+  </script>
+
+</html>
